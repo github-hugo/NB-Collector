@@ -1,0 +1,814 @@
+09:24:30.921,Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@345f69f3: startup date [Tue Feb 27 09:24:30 CST 2018]; root of context hierarchy
+09:24:31.589,HV000001: Hibernate Validator 5.3.6.Final
+09:24:31.612,JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+09:24:31.726,Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f0c49bde] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:24:32.994,No active profile set, falling back to default profiles: default
+09:24:33.036,Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28952dea: startup date [Tue Feb 27 09:24:33 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@345f69f3
+09:24:34.873,Multiple Spring Data modules found, entering strict repository configuration mode!
+09:24:35.014,Multiple Spring Data modules found, entering strict repository configuration mode!
+09:24:35.075,Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nhb.NBIot.dataaccess.dao.DeviceInfoDao.
+09:24:35.076,Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nhb.NBIot.dataaccess.dao.HistoryDataDao.
+09:24:35.077,Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nhb.NBIot.dataaccess.dao.RealtimeDataDao.
+09:24:35.077,Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nhb.NBIot.dataaccess.dao.TokenInfoDao.
+09:24:35.646,BeanFactory id=e8fd48f3-3173-3a02-8620-5a377ce6d037
+09:24:35.690,JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+09:24:35.905,Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$6d73f22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:24:35.954,Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f0c49bde] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:25:50.683,Tomcat initialized with port(s): 9093 (http) 37000 (https)
+09:25:50.711,Starting service [Tomcat]
+09:25:50.715,Starting Servlet Engine: Apache Tomcat/8.5.27
+09:25:51.521,At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09:25:51.530,Initializing Spring embedded WebApplicationContext
+09:25:51.531,Root WebApplicationContext: initialization completed in 78495 ms
+09:25:52.102,Mapping servlet: 'dispatcherServlet' to [/]
+09:25:52.112,Mapping filter: 'metricsFilter' to: [/*]
+09:25:52.113,Mapping filter: 'characterEncodingFilter' to: [/*]
+09:25:52.113,Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+09:25:52.113,Mapping filter: 'httpPutFormContentFilter' to: [/*]
+09:25:52.113,Mapping filter: 'requestContextFilter' to: [/*]
+09:25:52.113,Mapping filter: 'webRequestLoggingFilter' to: [/*]
+09:25:52.114,Mapping filter: 'crosFilter' to: [/*]
+09:25:52.114,Mapping filter: 'applicationContextIdFilter' to: [/*]
+09:25:54.279,Cluster created with settings {hosts=[192.168.1.90:17000], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+09:25:54.280,Adding discovered server 192.168.1.90:17000 to client view of cluster
+09:25:54.433,Opened connection [connectionId{localValue:1, serverValue:1118}] to 192.168.1.90:17000
+09:25:54.440,Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.90:17000, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 6]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, roundTripTimeNanos=4136256}
+09:25:54.443,Discovered cluster type of STANDALONE
+09:25:56.459,Mapped "{[/na/iocm/devNotify/v1.1.0/updateDeviceInfo],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.nhb.NBIot.api.callback.MessageNotificationController.updateDeviceInfo(com.nhb.NBIot.dto.device.DeviceAddedDTO) throws java.lang.Exception
+09:25:56.461,Mapped "{[/na/iocm/devNotify/v1.1.0/updateDeviceData],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.nhb.NBIot.api.callback.MessageNotificationController.updateDeviceData(com.nhb.NBIot.dto.data.DeviceDataChangedDTO) throws java.lang.Exception
+09:25:56.461,Mapped "{[/na/iocm/devNotify/v1.1.0/addDevice],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.nhb.NBIot.api.callback.MessageNotificationController.addDevice(com.nhb.NBIot.dto.device.DeviceAddedDTO) throws java.lang.Exception
+09:25:56.462,Mapped "{[/na/iocm/devNotify/v1.1.0/deletedDevice],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.nhb.NBIot.api.callback.MessageNotificationController.deleteDevice(com.nhb.NBIot.dto.device.DeviceAddedDTO)
+09:25:56.465,Mapped "{[/nhb/nbiot/data/collector/v1/subscribe],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DataCollectorController.subscribe(java.lang.String)
+09:25:56.466,Mapped "{[/nhb/nbiot/data/collector/v1/deviceDataHistory],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DataCollectorController.deviceDataHistory(com.nhb.NBIot.request.data.DataHistoryRequest)
+09:25:56.467,Mapped "{[/nhb/nbiot/data/collector/v1/queryDevice],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DataCollectorController.queryDevice(java.lang.String)
+09:25:56.468,Mapped "{[/nhb/nbiot/data/collector/v1/queryDevices],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DataCollectorController.queryDevices(com.nhb.NBIot.request.data.QueryDevicesRequest)
+09:25:56.470,Mapped "{[/nhb/nbiot/device/manage/v1/registerDirectlyConnectedDevice],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DeviceManageController.registerDirectlyConnectedDevice(com.nhb.NBIot.request.device.RegisterDeviceRequest)
+09:25:56.471,Mapped "{[/nhb/nbiot/device/manage/v1/deleteDirectlyConnectedDevice],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DeviceManageController.deleteDirectlyConnectedDevice(com.nhb.NBIot.request.device.DeleteDeviceRequest)
+09:25:56.472,Mapped "{[/nhb/nbiot/device/manage/v1/modifyDeviceInfo],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DeviceManageController.modifyDeviceInfo(com.nhb.NBIot.request.device.UpdateDeviceInfoRequest)
+09:25:56.480,Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+09:25:56.482,Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+09:25:56.484,Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+09:25:56.496,Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:25:56.497,Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:25:58.721,Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+09:25:58.724,Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+09:25:58.726,Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:25:58.727,Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:25:58.730,Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+09:25:58.734,Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+09:25:58.736,Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:25:58.738,Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+09:25:58.739,Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:25:58.742,Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+09:25:58.746,Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:25:58.747,Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:25:58.755,Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+09:25:58.755,Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:25:58.756,Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+09:25:58.757,Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+09:25:58.759,Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+09:25:58.761,Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:25:58.765,Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+09:25:58.767,Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+09:25:58.768,Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+09:25:58.770,Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:25:58.773,Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:25:58.774,Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:25:58.775,Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:25:58.776,Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+09:25:58.777,Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+09:25:59.157,Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+09:25:59.636,Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28952dea: startup date [Tue Feb 27 09:24:33 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@345f69f3
+09:25:59.766,Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:25:59.767,Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:25:59.875,Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:26:01.182,No URLs will be polled as dynamic configuration sources.
+09:26:01.183,To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+09:26:01.199,No URLs will be polled as dynamic configuration sources.
+09:26:01.200,To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+09:26:01.749,Registering beans for JMX exposure on startup
+09:26:01.772,Bean with name 'environmentManager' has been autodetected for JMX exposure
+09:26:01.778,Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+09:26:01.784,Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+09:26:01.786,Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+09:26:01.789,Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+09:26:01.793,Bean with name 'refreshScope' has been autodetected for JMX exposure
+09:26:01.798,Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+09:26:01.832,Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+09:26:01.859,Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+09:26:01.875,Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+09:26:01.896,Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=28952dea,type=ConfigurationPropertiesRebinder]
+09:26:01.909,Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+09:26:01.911,Registering beans for JMX exposure on startup
+09:26:02.207,Starting beans in phase 0
+09:26:02.221,Setting initial instance status as: STARTING
+09:26:02.304,Initializing Eureka in region us-east-1
+09:26:02.470,Using JSON encoding codec LegacyJacksonJson
+09:26:02.471,Using JSON decoding codec LegacyJacksonJson
+09:26:02.705,Using XML encoding codec XStreamXml
+09:26:02.705,Using XML decoding codec XStreamXml
+09:26:03.212,Resolving eureka endpoints via configuration
+09:26:03.513,Disable delta property : false
+09:26:03.513,Single vip registry refresh property : null
+09:26:03.514,Force full registry fetch : false
+09:26:03.514,Application is null : false
+09:26:03.514,Registered Applications size is zero : true
+09:26:03.514,Application version is -1: true
+09:26:03.514,Getting all instance registry info from the eureka server
+09:26:03.837,The response status is 200
+09:26:03.842,Starting heartbeat executor: renew interval is: 30
+09:26:03.847,InstanceInfoReplicator onDemand update allowed rate per min is 4
+09:26:03.852,Discovery Client initialized at timestamp 1519694763852 with initial instances count: 4
+09:26:03.927,Registering application nbiot-app with eureka with status UP
+09:26:03.929,Saw local status change event StatusChangeEvent [timestamp=1519694763929, current=UP, previous=STARTING]
+09:26:03.936,Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+09:26:03.954,Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+09:26:03.971,Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+09:26:03.976,Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+09:26:03.981,Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+09:26:03.997,Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+09:26:04.004,Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+09:26:04.010,Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+09:26:04.024,Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+09:26:04.031,Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+09:26:04.036,Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+09:26:04.040,Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+09:26:04.059,Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+09:26:04.068,Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+09:26:04.070,Starting beans in phase 2147483647
+09:26:04.071,Context refreshed
+09:26:04.131,Found 1 custom documentation plugin(s)
+09:26:04.169,Opened connection [connectionId{localValue:2, serverValue:1119}] to 192.168.1.90:17000
+09:26:04.210,DiscoveryClient_NBIOT-APP/xuyahui:nbiot-app:9093: registering service...
+09:26:04.289,Scanning for api listing references
+09:26:04.294,DiscoveryClient_NBIOT-APP/xuyahui:nbiot-app:9093 - registration status: 204
+09:26:05.533,No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+09:26:05.562,Initializing ProtocolHandler ["http-nio-9093"]
+09:26:05.581,Starting ProtocolHandler ["http-nio-9093"]
+09:26:05.664,Using a shared selector for servlet write/read
+09:26:05.692,Initializing ProtocolHandler ["https-jsse-nio-37000"]
+09:26:05.840,Using a shared selector for servlet write/read
+09:26:05.845,Starting ProtocolHandler ["https-jsse-nio-37000"]
+09:26:05.926,Tomcat started on port(s): 9093 (http) 37000 (https)
+09:26:05.928,Updating port to 9093
+09:26:05.935,Started NBIoTApplication in 96.527 seconds (JVM running for 97.563)
+09:27:33.323,Initializing Spring FrameworkServlet 'dispatcherServlet'
+09:27:33.323,FrameworkServlet 'dispatcherServlet': initialization started
+09:27:33.505,FrameworkServlet 'dispatcherServlet': initialization completed in 182 ms
+09:31:03.523,Resolving eureka endpoints via configuration
+09:36:03.525,Resolving eureka endpoints via configuration
+09:51:43.795,Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@345f69f3: startup date [Tue Feb 27 09:51:43 CST 2018]; root of context hierarchy
+09:51:44.421,JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+09:51:44.477,HV000001: Hibernate Validator 5.3.6.Final
+09:51:44.520,Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f3eb84ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:51:45.769,No active profile set, falling back to default profiles: default
+09:51:45.802,Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d0ec63: startup date [Tue Feb 27 09:51:45 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@345f69f3
+09:51:47.549,Multiple Spring Data modules found, entering strict repository configuration mode!
+09:51:47.672,Multiple Spring Data modules found, entering strict repository configuration mode!
+09:51:47.735,Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nhb.NBIot.dataaccess.dao.DeviceInfoDao.
+09:51:47.736,Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nhb.NBIot.dataaccess.dao.HistoryDataDao.
+09:51:47.737,Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nhb.NBIot.dataaccess.dao.RealtimeDataDao.
+09:51:47.738,Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.nhb.NBIot.dataaccess.dao.TokenInfoDao.
+09:51:48.276,BeanFactory id=e8fd48f3-3173-3a02-8620-5a377ce6d037
+09:51:48.321,JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+09:51:48.505,Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$9fe2812] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:51:48.534,Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f3eb84ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:51:49.549,Tomcat initialized with port(s): 9093 (http) 37000 (https)
+09:51:49.575,Starting service [Tomcat]
+09:51:49.578,Starting Servlet Engine: Apache Tomcat/8.5.27
+09:51:50.078,At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+09:51:50.086,Initializing Spring embedded WebApplicationContext
+09:51:50.087,Root WebApplicationContext: initialization completed in 4285 ms
+09:51:50.747,Mapping servlet: 'dispatcherServlet' to [/]
+09:51:50.758,Mapping filter: 'metricsFilter' to: [/*]
+09:51:50.759,Mapping filter: 'characterEncodingFilter' to: [/*]
+09:51:50.759,Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+09:51:50.759,Mapping filter: 'httpPutFormContentFilter' to: [/*]
+09:51:50.759,Mapping filter: 'requestContextFilter' to: [/*]
+09:51:50.759,Mapping filter: 'webRequestLoggingFilter' to: [/*]
+09:51:50.760,Mapping filter: 'crosFilter' to: [/*]
+09:51:50.760,Mapping filter: 'applicationContextIdFilter' to: [/*]
+09:51:52.708,Cluster created with settings {hosts=[192.168.1.90:17000], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+09:51:52.708,Adding discovered server 192.168.1.90:17000 to client view of cluster
+09:51:52.845,Opened connection [connectionId{localValue:1, serverValue:1128}] to 192.168.1.90:17000
+09:51:52.851,Monitor thread successfully connected to server with description ServerDescription{address=192.168.1.90:17000, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 6]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, roundTripTimeNanos=3670610}
+09:51:52.855,Discovered cluster type of STANDALONE
+09:51:54.583,Mapped "{[/na/iocm/devNotify/v1.1.0/updateDeviceData],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.nhb.NBIot.api.callback.MessageNotificationController.updateDeviceData(com.nhb.NBIot.dto.data.DeviceDataChangedDTO) throws java.lang.Exception
+09:51:54.586,Mapped "{[/na/iocm/devNotify/v1.1.0/updateDeviceInfo],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.nhb.NBIot.api.callback.MessageNotificationController.updateDeviceInfo(com.nhb.NBIot.dto.device.DeviceAddedDTO) throws java.lang.Exception
+09:51:54.587,Mapped "{[/na/iocm/devNotify/v1.1.0/addDevice],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.nhb.NBIot.api.callback.MessageNotificationController.addDevice(com.nhb.NBIot.dto.device.DeviceAddedDTO) throws java.lang.Exception
+09:51:54.588,Mapped "{[/na/iocm/devNotify/v1.1.0/deletedDevice],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.nhb.NBIot.api.callback.MessageNotificationController.deleteDevice(com.nhb.NBIot.dto.device.DeviceAddedDTO)
+09:51:54.590,Mapped "{[/nhb/nbiot/data/collector/v1/queryDevice],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DataCollectorController.queryDevice(java.lang.String)
+09:51:54.591,Mapped "{[/nhb/nbiot/data/collector/v1/queryDevices],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DataCollectorController.queryDevices(com.nhb.NBIot.request.data.QueryDevicesRequest)
+09:51:54.591,Mapped "{[/nhb/nbiot/data/collector/v1/subscribe],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DataCollectorController.subscribe(java.lang.String)
+09:51:54.591,Mapped "{[/nhb/nbiot/data/collector/v1/deviceDataHistory],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DataCollectorController.deviceDataHistory(com.nhb.NBIot.request.data.DataHistoryRequest)
+09:51:54.595,Mapped "{[/nhb/nbiot/device/manage/v1/modifyDeviceInfo],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DeviceManageController.modifyDeviceInfo(com.nhb.NBIot.request.device.UpdateDeviceInfoRequest)
+09:51:54.595,Mapped "{[/nhb/nbiot/device/manage/v1/registerDirectlyConnectedDevice],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DeviceManageController.registerDirectlyConnectedDevice(com.nhb.NBIot.request.device.RegisterDeviceRequest)
+09:51:54.596,Mapped "{[/nhb/nbiot/device/manage/v1/deleteDirectlyConnectedDevice],methods=[POST]}" onto public com.nhb.utils.nhb_utils.common.RestResultDto com.nhb.NBIot.api.DeviceManageController.deleteDirectlyConnectedDevice(com.nhb.NBIot.request.device.DeleteDeviceRequest)
+09:51:54.604,Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+09:51:54.607,Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+09:51:54.610,Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+09:51:54.622,Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:51:54.623,Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:51:56.752,Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:51:56.753,Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+09:51:56.753,Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+09:51:56.756,Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+09:51:56.757,Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+09:51:56.758,Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:51:56.759,Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:51:56.760,Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:51:56.763,Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+09:51:56.764,Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:51:56.765,Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:51:56.766,Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:51:56.767,Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+09:51:56.768,Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:51:56.773,Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:51:56.775,Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+09:51:56.776,Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+09:51:56.779,Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+09:51:56.779,Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:51:56.780,Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+09:51:56.780,Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+09:51:56.781,Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+09:51:56.784,Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+09:51:56.784,Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+09:51:56.785,Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+09:51:56.786,Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:51:56.787,Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:51:57.136,Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+09:51:57.698,Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d0ec63: startup date [Tue Feb 27 09:51:45 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@345f69f3
+09:51:57.819,Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:51:57.820,Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:51:57.922,Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:51:58.782,No URLs will be polled as dynamic configuration sources.
+09:51:58.782,To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+09:51:58.795,No URLs will be polled as dynamic configuration sources.
+09:51:58.795,To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+09:51:59.277,Registering beans for JMX exposure on startup
+09:51:59.295,Bean with name 'environmentManager' has been autodetected for JMX exposure
+09:51:59.300,Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+09:51:59.302,Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+09:51:59.303,Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+09:51:59.305,Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+09:51:59.306,Bean with name 'refreshScope' has been autodetected for JMX exposure
+09:51:59.311,Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+09:51:59.333,Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+09:51:59.360,Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+09:51:59.373,Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+09:51:59.405,Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=d0ec63,type=ConfigurationPropertiesRebinder]
+09:51:59.422,Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+09:51:59.424,Registering beans for JMX exposure on startup
+09:51:59.851,Starting beans in phase 0
+09:51:59.872,Setting initial instance status as: STARTING
+09:51:59.959,Initializing Eureka in region us-east-1
+09:52:00.131,Using JSON encoding codec LegacyJacksonJson
+09:52:00.132,Using JSON decoding codec LegacyJacksonJson
+09:52:00.357,Using XML encoding codec XStreamXml
+09:52:00.358,Using XML decoding codec XStreamXml
+09:52:00.823,Resolving eureka endpoints via configuration
+09:52:01.265,Disable delta property : false
+09:52:01.265,Single vip registry refresh property : null
+09:52:01.265,Force full registry fetch : false
+09:52:01.265,Application is null : false
+09:52:01.265,Registered Applications size is zero : true
+09:52:01.266,Application version is -1: true
+09:52:01.266,Getting all instance registry info from the eureka server
+09:52:01.625,The response status is 200
+09:52:01.627,Starting heartbeat executor: renew interval is: 30
+09:52:01.632,InstanceInfoReplicator onDemand update allowed rate per min is 4
+09:52:01.638,Discovery Client initialized at timestamp 1519696321637 with initial instances count: 4
+09:52:01.697,Registering application nbiot-app with eureka with status UP
+09:52:01.699,Saw local status change event StatusChangeEvent [timestamp=1519696321699, current=UP, previous=STARTING]
+09:52:01.706,Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+09:52:01.719,Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+09:52:01.741,Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+09:52:01.750,Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+09:52:01.754,Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+09:52:01.758,Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+09:52:01.762,Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+09:52:01.767,Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+09:52:01.785,Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+09:52:01.792,Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+09:52:01.795,Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+09:52:01.799,Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+09:52:01.802,Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+09:52:01.806,Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+09:52:01.808,Starting beans in phase 2147483647
+09:52:01.808,Context refreshed
+09:52:01.859,Found 1 custom documentation plugin(s)
+09:52:01.908,Opened connection [connectionId{localValue:2, serverValue:1129}] to 192.168.1.90:17000
+09:52:01.944,DiscoveryClient_NBIOT-APP/xuyahui:nbiot-app:9093: registering service...
+09:52:02.009,Scanning for api listing references
+09:52:02.019,DiscoveryClient_NBIOT-APP/xuyahui:nbiot-app:9093 - registration status: 204
+09:52:02.987,No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+09:52:03.012,Initializing ProtocolHandler ["http-nio-9093"]
+09:52:03.028,Starting ProtocolHandler ["http-nio-9093"]
+09:52:03.050,Using a shared selector for servlet write/read
+09:52:03.083,Initializing ProtocolHandler ["https-jsse-nio-37000"]
+09:52:03.224,Using a shared selector for servlet write/read
+09:52:03.228,Starting ProtocolHandler ["https-jsse-nio-37000"]
+09:52:03.322,Tomcat started on port(s): 9093 (http) 37000 (https)
+09:52:03.326,Updating port to 9093
+09:52:03.336,Started NBIoTApplication in 20.793 seconds (JVM running for 21.661)
+09:52:50.634,Initializing Spring FrameworkServlet 'dispatcherServlet'
+09:52:50.634,FrameworkServlet 'dispatcherServlet': initialization started
+09:52:50.681,FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+09:57:01.270,Resolving eureka endpoints via configuration
+10:02:01.272,Resolving eureka endpoints via configuration
+10:07:01.274,Resolving eureka endpoints via configuration
+10:12:01.276,Resolving eureka endpoints via configuration
+10:17:01.279,Resolving eureka endpoints via configuration
+10:22:01.281,Resolving eureka endpoints via configuration
+10:27:01.283,Resolving eureka endpoints via configuration
+10:32:01.285,Resolving eureka endpoints via configuration
+10:37:01.287,Resolving eureka endpoints via configuration
+10:42:01.289,Resolving eureka endpoints via configuration
+10:47:01.292,Resolving eureka endpoints via configuration
+10:52:01.300,Resolving eureka endpoints via configuration
+10:54:00.008,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+10:55:00.003,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+10:56:00.003,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+10:57:00.004,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+10:57:01.302,Resolving eureka endpoints via configuration
+10:58:00.002,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+10:59:00.004,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:00:00.003,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:01:00.004,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:02:00.003,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:02:01.304,Resolving eureka endpoints via configuration
+11:03:00.003,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:04:00.003,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:05:00.003,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:06:00.004,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:07:00.003,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:07:01.306,Resolving eureka endpoints via configuration
+11:08:00.004,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:09:00.004,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:10:00.003,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:11:00.004,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:12:00.004,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:12:01.308,Resolving eureka endpoints via configuration
+11:13:00.004,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:14:00.003,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:15:00.005,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:16:00.002,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:17:00.002,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:17:01.311,Resolving eureka endpoints via configuration
+11:18:00.004,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:19:00.003,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:20:00.005,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:21:00.003,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:22:00.004,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+11:22:01.313,Resolving eureka endpoints via configuration
+11:23:00.003,Unexpected error occurred in scheduled task.
+java.lang.NullPointerException: null
+	at com.nhb.NBIot.job.RefreshTokenJob.refreshToken(RefreshTokenJob.java:38)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
